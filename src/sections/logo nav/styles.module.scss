@@ -3,16 +3,87 @@
 }
 
 .navbar {
-    padding: 20px 5% 0;
-    background-color: #fbe8de;
-    background-image: url("/images/background-noise.png");
-    background-position: 0 0;
-    background-size: auto;
+
+    .actions {
+        background-color: #fbe8de;
+        background-image: url("/images/background-noise.png");
+        background-position: 0 0;
+        background-size: auto;
+        position: relative;
+        padding: 20px 5% 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-height: 80px;
+        z-index: 6;
+    }
+
+    .logoWrapper {
+        padding-left: 10px;
+    }
+
+    .menuWrapper {
+        position: relative;
+    }
+
+    .menu {
+        position: absolute;
+        top: -270px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        z-index: 5;
+        transition: 0.4s;
+
+        a {
+            padding: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: .5px;
+            transition: .2s;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: #ea552b;
+            }
+        }
+    }
+
+    .open {
+        top: 0;
+    }
+}
+
+.hamburgerWrapper {
+    padding: 18px;
+    cursor: pointer;
+
+    div {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 479px) {
+    /* For big mobile: */
+
 }
 
 @media only screen and (min-width: 767px) {
     /* For tablet: */
-    
+    .logoWrapper {
+        img {
+            width: 120px;
+            height: 25px;
+        }
+    }
 }
 
 @media only screen and (min-width: 991px) {

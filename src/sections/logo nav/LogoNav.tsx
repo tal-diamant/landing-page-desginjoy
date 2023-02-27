@@ -1,16 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function LogoNav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <div className={styles.navbar}>
-        <div>
-            <Image src="/images/logo.svg" width={120} height={25} alt="" />
+        <div className={styles.actions}>
+          <div className={styles.logoWrapper}>
+              <Link href="">
+                <Image src="/images/logo.svg" width={110} height={23} alt="" />
+              </Link>
+          </div>
+          <div className={styles.hamburgerWrapper} onClick={() => setIsMenuOpen(current => !current)}>
+            <div>
+              <Image src="/images/hamburger-menu.svg" width={16} height={16} alt="" />
+            </div>
+          </div>
         </div>
-        <div>
-            
+        <div className={styles.menuWrapper}>
+          <div className={`${styles.menu} ${isMenuOpen? styles.open: ''}`}>
+            <Link href="">Latest projects</Link>
+            <Link href="">Pricing</Link>
+            <Link href="">FAQs</Link>
+            <Link href="">Login</Link>
+          </div>
         </div>
       </div>
 
