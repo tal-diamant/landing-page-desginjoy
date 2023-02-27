@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import LogoNav from '@/sections/logo nav/LogoNav';
 import Hero from "@/sections/hero/Hero";
 import ProjectsLine from "@/sections/projects line/ProjectsLine";
+import Marquee from '@/sections/marquee/Marquee';
 
 import styles from '@/styles/Home.module.css'
 
@@ -23,7 +24,7 @@ export default function Home() {
         <LogoNav />
         <Hero />
         <ProjectsLine />
-        {/* marquee */}
+        <Marquee />
         {/* white 1 */}
         {/* divider */}
         {/* grey */}
