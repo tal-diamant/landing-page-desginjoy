@@ -1,6 +1,6 @@
 .hero {
     overflow: hidden;
-    padding: 200px 5% 40px;
+    padding: 100px 5% 60px;
     background-image: url("/images/background-noise.png"),linear-gradient(180deg,#fbe8de,#fbe8de);
     background-position: 0 0,0 0;
     background-size: auto,auto;
@@ -15,11 +15,10 @@
 }
 
 .heading {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 53px;
+    line-height: 54px;
     font-weight: bold;
     margin: 0 auto;
-    max-width: 825px;
 }
 
 .paragraph {
@@ -30,7 +29,7 @@
 }
 
 .heroButton {
-    margin-top: 40px;
+    margin-top: 30px;
     display: inline-block;
 
     a {
@@ -46,6 +45,11 @@
         text-align: center;
         letter-spacing: .5px;
         text-decoration: none;
+
+        &:hover {
+            translate: 0 -6px;
+            box-shadow: 8px 8px 0 0 rgba(0,0,0,.2);
+        }
     }
 }
 
@@ -58,21 +62,105 @@
     position: absolute;
     top: 15%;
     bottom: auto;
-    width: 16vw;
-    max-width: 200px;
+    width: 20vw;
+    max-width: 20vw;
 }
 
 .doodleLeft {
-    left: 0;
+    top: 5%;
+    left: -5%;
     right: auto;
 }
 
 .doodleRight {
+    display: none;
     right: 0;
     left: auto;
 }
 
+@media only screen and (min-width: 479px) {
+    /* For big mobile: */
+    .hero {
+        padding: 200px 5% 40px;
+        background-image: url("/images/background-noise.png"),linear-gradient(180deg,#fbe8de,#fbe8de);
+        background-position: 0 0,0 0;
+        background-size: auto,auto;
+    }
+
+    .heading {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .heroButton {
+        margin-top: 40px;
+    }
+
+    .doodleLeft {
+        width: 96px;
+        height: 192px;
+    }
+
+    .doodleRight {
+        display: inline-block;
+        top: initial;
+        right: -6%;
+        bottom: 28%;
+        width: 115px;
+        max-width: 115px;
+    }
+
+}
+
+@media only screen and (min-width: 767px) {
+    /* For tablet: */
+    .heading {
+        font-size: 80px;
+        line-height: 80px;
+        max-width: 639px;
+    }
+
+    .doodleLeft {
+        width: 25vw;
+        max-width: 25vw;
+        height: 383px;
+        top: 15%;
+        left : 0;
+        right: auto;
+        bottom: auto;
+    }
+
+    .doodleRight {
+        top: auto;
+        left: auto;
+        right: 0;
+        bottom: 37%;
+        width: 30vw;
+        max-width: 24vw;
+        height: 343px;
+    }
+    
+}
+
 @media only screen and (min-width: 991px) {
     /* For desktop: */
-    
+    .heading {
+        font-size: 80px;
+        line-height: 90px;
+        max-width: 640px;
+    }
+
+    .doodleLeft {
+        height: 317px;
+        width: 16vw;
+        max-width: 200px;
+    }
+
+    .doodleRight {
+        height: 295px;
+        top: 13%;
+        bottom: 0;
+        width: 16vw;
+        max-width: 250px;
+    }
 }

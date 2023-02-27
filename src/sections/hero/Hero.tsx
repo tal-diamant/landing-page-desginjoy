@@ -19,8 +19,8 @@ export default function Hero() {
                     <span>, guaranteed</span>
                 </div>
             </div>
-            <Image src="/images/hero-left.svg" className={`${styles.doodle} ${styles.doodleLeft}`} width={159} height={317} alt="" />
-            <Image src="/images/hero-right.svg" className={`${styles.doodle} ${styles.doodleRight}`} width={159} height={296} alt="" />
+            <Image src="/images/hero-left.svg" className={`${styles.doodle} ${styles.doodleLeft}`} width={64} height={128} alt="" />
+            <Image src="/images/hero-right.svg" className={`${styles.doodle} ${styles.doodleRight}`} width={115} height={214} alt="" />
         </section>
     )
 }
