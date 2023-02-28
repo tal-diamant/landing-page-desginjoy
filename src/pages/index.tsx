@@ -1,16 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
 
-import LogoNav from '@/sections/logo nav/LogoNav';
+import LogoNav from "@/sections/logo nav/LogoNav";
 import Hero from "@/sections/hero/Hero";
 import ProjectsLine from "@/sections/projects line/ProjectsLine";
-import Marquee from '@/sections/marquee/Marquee';
-import White1 from '@/sections/white 1/White1';
+import Marquee from "@/sections/marquee/Marquee";
+import White1 from "@/sections/white 1/White1";
+import Divider1 from "@/components/dividers/Divider1/Divider1";
+import Gray from "@/sections/Gray/Gray";
 
-import styles from '@/styles/Home.module.css'
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -27,8 +29,8 @@ export default function Home() {
         <ProjectsLine />
         <Marquee />
         <White1 />
-        {/* divider */}
-        {/* grey */}
+        <Divider1 />
+        <Gray />
         {/* divider */}
         {/* benefits */}
         {/* divider */}
@@ -45,5 +47,5 @@ export default function Home() {
         {/* floating nav */}
       </main>
     </>
-  )
+  );
 }
