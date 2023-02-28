@@ -6,6 +6,7 @@ import LogoNav from '@/sections/logo nav/LogoNav';
 import Hero from "@/sections/hero/Hero";
 import ProjectsLine from "@/sections/projects line/ProjectsLine";
 import Marquee from '@/sections/marquee/Marquee';
+import White1 from '@/sections/white 1/White1';
 
 import styles from '@/styles/Home.module.css'
 
@@ -25,7 +26,7 @@ export default function Home() {
         <Hero />
         <ProjectsLine />
         <Marquee />
-        {/* white 1 */}
+        <White1 />
         {/* divider */}
         {/* grey */}
         {/* divider */}
