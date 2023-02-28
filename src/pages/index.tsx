@@ -9,6 +9,7 @@ import Marquee from "@/sections/marquee/Marquee";
 import White1 from "@/sections/white 1/White1";
 import Divider1 from "@/components/dividers/Divider1/Divider1";
 import Gray from "@/sections/Gray/Gray";
+import Divider2 from "@/components/dividers/Divider2/Divider2";
 
 import styles from "@/styles/Home.module.css";
 
@@ -31,7 +32,7 @@ export default function Home() {
         <White1 />
         <Divider1 />
         <Gray />
-        {/* divider */}
+        <Divider2 />
         {/* benefits */}
         {/* divider */}
         {/* latest */}
