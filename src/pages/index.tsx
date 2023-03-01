@@ -12,6 +12,7 @@ import Gray from "@/sections/Gray/Gray";
 import Divider2 from "@/components/dividers/Divider2/Divider2";
 import Benefits from "@/sections/benefits/Benefits";
 import Divider3 from "@/components/dividers/Divider3/Divider3";
+import Latest from "@/sections/latest/Latest";
 
 import styles from "@/styles/Home.module.css";
 
@@ -37,7 +38,7 @@ export default function Home() {
         <Divider2 />
         <Benefits />
         <Divider3 />
-        {/* latest */}
+        <Latest />
         {/* divider */}
         {/* white 2 */}
         {/* sow */}
