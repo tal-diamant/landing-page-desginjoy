@@ -1,0 +1,83 @@
+.sow {
+    padding: 60px 5% 100px;
+    position: relative;
+    background-image: url("https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png"),linear-gradient(180deg,#fff,#fff);
+    background-position: 0 0;
+    background-size: auto;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 100px;
+        font-size: 42px;
+        line-height: 44px;
+        letter-spacing: .5px;
+    }
+}
+
+.scope {
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+    border: 6px solid #fbe8de;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: left;
+
+    img {
+        position: absolute;
+        top: -4%;
+        right: -5%;
+        left: auto;
+        bottom: auto;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+}
+
+.col span {
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    border-bottom: 6px solid #fbe8de;
+}
+
+@media only screen and (min-width: 479px) {
+    /* For big mobile: */
+    .container h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .scope {
+        padding: 50px;
+
+        img {
+            left: -5%;
+            right: auto;
+        }
+    } 
+}
+
+@media only screen and (min-width: 767px) {
+    /* For tablet: */
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    /* For desktop: */
+}

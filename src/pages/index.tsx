@@ -15,6 +15,7 @@ import Divider3 from "@/components/dividers/Divider3/Divider3";
 import Latest from "@/sections/latest/Latest";
 import Divider4 from "@/components/dividers/Divider4/Divider4";
 import White2 from "@/sections/white 2/White2";
+import Sow from "@/sections/sow/Sow";
 
 import styles from "@/styles/Home.module.css";
 
@@ -43,7 +44,7 @@ export default function Home() {
         <Latest />
         <Divider4 />
         <White2 />
-        {/* sow */}
+        <Sow />
         {/* divider */}
         {/* pricing */}
         {/* divider */}
