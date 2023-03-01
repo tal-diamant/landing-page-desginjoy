@@ -11,6 +11,7 @@ import Divider1 from "@/components/dividers/Divider1/Divider1";
 import Gray from "@/sections/Gray/Gray";
 import Divider2 from "@/components/dividers/Divider2/Divider2";
 import Benefits from "@/sections/benefits/Benefits";
+import Divider3 from "@/components/dividers/Divider3/Divider3";
 
 import styles from "@/styles/Home.module.css";
 
@@ -35,7 +36,7 @@ export default function Home() {
         <Gray />
         <Divider2 />
         <Benefits />
-        {/* divider */}
+        <Divider3 />
         {/* latest */}
         {/* divider */}
         {/* white 2 */}
