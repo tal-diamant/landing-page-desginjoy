@@ -13,6 +13,7 @@ import Divider2 from "@/components/dividers/Divider2/Divider2";
 import Benefits from "@/sections/benefits/Benefits";
 import Divider3 from "@/components/dividers/Divider3/Divider3";
 import Latest from "@/sections/latest/Latest";
+import Divider4 from "@/components/dividers/Divider4/Divider4";
 
 import styles from "@/styles/Home.module.css";
 
@@ -39,7 +40,7 @@ export default function Home() {
         <Benefits />
         <Divider3 />
         <Latest />
-        {/* divider */}
+        <Divider4 />
         {/* white 2 */}
         {/* sow */}
         {/* divider */}
