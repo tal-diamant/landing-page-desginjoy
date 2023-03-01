@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import PricingColumn from "@/components/pricing column/PricingColumn";
+import { columnData2 } from "@/components/pricing column/data";
 import styles from "./styles.module.scss";
 
 export default function Pricing() {
@@ -33,8 +35,19 @@ export default function Pricing() {
               <Image src="/images/scratch-marks.svg" className={styles.scratch} width={20} height={24} alt="" />
             </div>
 
-            <div className={styles.colBottom}></div>
+            <div className={styles.colBottom}>
+                <h4>What's included:</h4>
+                <ul>
+                    <li>Unlimited requests</li>
+                    <li>Unlimited brands</li>
+                    <li>Unlimited users</li>
+                    <li>Unlimited stock photos via Shutterstock</li>
+                    <li>Pause or cancel anytime</li>
+                </ul>
+            </div>
           </div>
+
+          <PricingColumn data={columnData2} />
 
           <div className={styles.col}></div>
           <div className={styles.col}></div>
