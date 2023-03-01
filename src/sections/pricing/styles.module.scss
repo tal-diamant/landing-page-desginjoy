@@ -1,0 +1,165 @@
+.pricing {
+    padding: 60px 5%;
+    overflow: hidden;
+    background-image: url("/images/background-noise.png"),linear-gradient(180deg,#fbe8de,#fbe8de);
+    background-position: 0 0;
+    background-size: auto;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.splash {
+    max-width: 540px;
+    margin: 0 auto 60px;
+
+    h2 {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 42px;
+        line-height: 44px;
+        letter-spacing: .5px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 60px;
+    }
+}
+
+.pricingGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 16px;
+
+    .colTop {
+        padding: 60px 30px 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        background-image: url("/images/background-noise.png");
+        background-position: 0 0;
+        background-size: auto;
+        text-align: left;
+
+        .topTop {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: .5px;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+
+        .topBottom {
+            span {
+                display: block;
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: bold;
+                letter-spacing: .5px;
+            }
+
+            p {
+                opacity: .5;
+                font-size: 12px;
+                margin-bottom: 30px;
+            }
+
+            .button {
+                width: 100%;
+                margin-bottom: 24px;
+
+                a {
+                    width: 100%;
+                    display: inline-block;
+                    padding: 24px 40px;
+                    border-radius: 8px;
+                    background-color: #000;
+                    box-shadow: 6px 6px 0 0 rgba(0,0,0,.2);
+                    transition: .2s;
+                    color: #fff;
+                    font-size: 17px;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: .5px;
+                    text-decoration: none;
+
+                    &:hover {
+                        box-shadow: 8px 8px 0 0 rgba(0,0,0,.2);
+                        translate: 0 -6px;
+                    }
+                }
+            }
+
+            a {
+                display: inline-block;
+                width: auto;
+                margin: 0 auto;
+                border-style: none none dotted;
+                border-width: 1px;
+                border-color: #000;
+                color: #000;
+                font-weight: bold;
+                text-align: center;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        }
+
+        .popular {
+            left: 4%;
+            position: absolute;
+            top: -3%;
+            right: auto;
+            bottom: auto;
+            padding: 6px 9px;
+            border-radius: 5px;
+            background-color: #ea552b;
+            rotate: -9deg;
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .scratch {
+            position: absolute;
+            left: 8%;
+            top: -13%;
+            right: auto;
+            bottom: auto;
+            width: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 479px) {
+    /* For big mobile: */
+}
+
+@media only screen and (min-width: 767px) {
+    /* For tablet: */
+}
+
+@media only screen and (min-width: 991px) {
+    /* For desktop: */
+}
