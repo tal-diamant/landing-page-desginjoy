@@ -127,3 +127,43 @@
         margin-bottom: 10px;
     }
 }
+
+@media only screen and (min-width: 767px) {
+    /* For tablet: */
+    .topBottom {
+        .button {
+            width: auto !important;
+            display: inline-block;
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    /* For tablet: */
+    .colTop {
+        min-height: 450px;
+
+        .action2 {
+            text-align: center;
+        }
+
+        .topBottom {
+            p {
+                margin-bottom: 40px;
+            }
+        }
+
+        .popular {
+            left: 9%;
+        }
+
+        .scratch {
+            left: 22%;
+            top: -10%;
+        }
+    }
+
+    .colBottom {
+        min-height: 350px;
+    }
+}

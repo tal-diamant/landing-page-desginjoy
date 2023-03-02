@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PricingColumn from "@/components/pricing column/PricingColumn";
-import { columnData2 } from "@/components/pricing column/data";
+import { columnData, columnData2, columnData3 } from "@/components/pricing column/data";
 import styles from "./styles.module.scss";
 
 export default function Pricing() {
@@ -15,43 +15,30 @@ export default function Pricing() {
         </div>
         <div className={styles.pricingGrid}>
           
-          <div className={styles.col}>
-            <div className={styles.colTop}>
-              <div className={styles.topTop}>
-                <h3>Monthly</h3>
-                <p>No minimum commitment. Pause or cancel anytime.</p>
-              </div>
-              <div className={styles.topBottom}>
-                <span>$4,995/m</span>
-                <p>Pause or cancel anytime</p>
-                <div className={styles.button}>
-                    <Link href="">Get started</Link>
-                </div>
-                <div>
-                    <Link href="">Book a call</Link>
-                </div>
-              </div>
-              <div className={styles.popular}>Most Popular</div>
-              <Image src="/images/scratch-marks.svg" className={styles.scratch} width={20} height={24} alt="" />
-            </div>
+          <PricingColumn data={columnData} />
+          <PricingColumn data={columnData2} />
+          <PricingColumn data={columnData3} />
 
-            <div className={styles.colBottom}>
-                <h4>What's included:</h4>
-                <ul>
-                    <li>Unlimited requests</li>
-                    <li>Unlimited brands</li>
-                    <li>Unlimited users</li>
-                    <li>Unlimited stock photos via Shutterstock</li>
-                    <li>Pause or cancel anytime</li>
-                </ul>
+          <div className={styles.rightCol}>
+            <div className={`${styles.section} ${styles.top}`}>
+              <Image src="/images/monitor-mirror.svg" width={158} height={111} alt="" />
+              <h3>Book a call</h3>
+              <p>Learn more about how DesignJoy works and how it can help you.</p>
+              <Link href="">Book a call</Link>
+            </div>
+            <div className={`${styles.section} ${styles.bottom}`}>
+              <Image src="/images/holding-money.svg" width={247} height={111} alt="" />
+              <h3>Refer a friend & earn</h3>
+              <p>Earn 5% monthly recurring commissions for each referral.</p>
+              <Link href="">Join now</Link>
             </div>
           </div>
-
-          <PricingColumn data={columnData2} />
-
-          <div className={styles.col}></div>
-          <div className={styles.col}></div>
-          <div className={styles.col}></div>
+        </div>
+        <div className={styles.addOn}>
+          <div className={styles.badge}>ADD-ON</div>
+          <h2>Webflow development</h2>
+          <p>Get a better website faster with Webflow development. Requires a design subscription.</p>
+          <span>$999/m</span>
         </div>
       </div>
     </section>

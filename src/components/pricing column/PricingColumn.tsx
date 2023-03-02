@@ -22,7 +22,7 @@ export default function PricingColumn({data}: Props) {
           <div className={styles.button}>
             <Link href="">{data.colTop.bottom.action1}</Link>
           </div>
-          <div>
+          <div className={styles.action2}>
             <Link href="">{data.colTop.bottom.action2}</Link>
           </div>
         </div>
