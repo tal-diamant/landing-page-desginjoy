@@ -20,6 +20,7 @@ import Divider5 from "@/components/dividers/Divider5/Divider5";
 import Pricing from "@/sections/pricing/Pricing";
 import Divider6 from "@/components/dividers/Divider6/Divider6";
 import FAQ from "@/sections/faq/FAQ";
+import Footer from "@/sections/footer/Footer";
 
 import styles from "@/styles/Home.module.css";
 
@@ -53,7 +54,7 @@ export default function Home() {
         <Pricing />
         <Divider6 />
         <FAQ />
-        {/* footer */}
+        <Footer />
         {/* cookies */}
         {/* floating nav */}
       </main>
