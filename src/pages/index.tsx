@@ -19,6 +19,7 @@ import Sow from "@/sections/sow/Sow";
 import Divider5 from "@/components/dividers/Divider5/Divider5";
 import Pricing from "@/sections/pricing/Pricing";
 import Divider6 from "@/components/dividers/Divider6/Divider6";
+import FAQ from "@/sections/faq/FAQ";
 
 import styles from "@/styles/Home.module.css";
 
@@ -51,7 +52,7 @@ export default function Home() {
         <Divider5 />
         <Pricing />
         <Divider6 />
-        {/* faq */}
+        <FAQ />
         {/* footer */}
         {/* cookies */}
         {/* floating nav */}
