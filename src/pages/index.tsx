@@ -18,6 +18,7 @@ import White2 from "@/sections/white 2/White2";
 import Sow from "@/sections/sow/Sow";
 import Divider5 from "@/components/dividers/Divider5/Divider5";
 import Pricing from "@/sections/pricing/Pricing";
+import Divider6 from "@/components/dividers/Divider6/Divider6";
 
 import styles from "@/styles/Home.module.css";
 
@@ -49,7 +50,7 @@ export default function Home() {
         <Sow />
         <Divider5 />
         <Pricing />
-        {/* divider */}
+        <Divider6 />
         {/* faq */}
         {/* footer */}
         {/* cookies */}
