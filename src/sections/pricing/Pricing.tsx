@@ -2,18 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import PricingColumn from "@/components/pricing column/PricingColumn";
 import { columnData, columnData2, columnData3 } from "@/components/pricing column/data";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.scss";
 
 export default function Pricing() {
   return (
-    <section className={styles.pricing}>
+    <section className={styles.pricing} id="pricing">
       <div className={styles.container}>
+        <AnimateIn>
         <div className={styles.splash}>
             <h2>Memberships levels</h2>
             <p>Choose a plan that's right for you.</p>
             <Image src="/images/doodle12.svg" width={288} height={46} alt="" />
         </div>
-        <div className={styles.pricingGrid}>
+        </AnimateIn>
+
+        <AnimateIn>
+        <div className={styles.pricingGrid} id="pricing-grid">
           
           <PricingColumn data={columnData} />
           <PricingColumn data={columnData2} />
@@ -34,12 +39,14 @@ export default function Pricing() {
             </div>
           </div>
         </div>
+        
         <div className={styles.addOn}>
           <div className={styles.badge}>ADD-ON</div>
           <h2>Webflow development</h2>
           <p>Get a better website faster with Webflow development. Requires a design subscription.</p>
           <span>$999/m</span>
         </div>
+        </AnimateIn>
       </div>
     </section>
   );

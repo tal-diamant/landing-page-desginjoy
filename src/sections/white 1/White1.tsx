@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.scss";
 
 export default function White1() {
@@ -7,6 +8,7 @@ export default function White1() {
     <section className={styles.white1}>
       <div className={styles.container}>
         {/* part 1 */}
+        <AnimateIn>
         <div className={styles.headingAndSupport}>
           <h2>We didn't reinvent the wheel, just design</h2>
           <p>
@@ -14,8 +16,10 @@ export default function White1() {
             arrived.
           </p>
         </div>
+        </AnimateIn>
 
         {/* part 2 */}
+        <AnimateIn>
         <div className={styles.items}>
           {/* item 1 */}
           <div className={styles.item}>
@@ -63,17 +67,24 @@ export default function White1() {
             </p>
           </div>
         </div>
+        </AnimateIn>
 
         {/* part 3 */}
+        <AnimateIn>
         <div className={styles.quote}>
             <div className={styles.content}>
-                <Image src="/images/red-quotes.svg" className={styles.redQuotes} width={35} height={30} alt="" />
-                <p>Designjoy shows that they know the art of subtlety.</p>    
-                <Image src="/images/webflow.svg" className={styles.webflow} width={110} height={28} alt="" />    
+              <Image src="/images/red-quotes.svg" className={styles.redQuotes} width={35} height={30} alt="" />
+              <p>Designjoy shows that they know the art of subtlety.</p>    
+              <Image src="/images/webflow.svg" className={styles.webflow} width={110} height={28} alt="" />    
             </div>
+            <AnimateIn direction="right">
             <Image src="/images/6-lines.svg" className={styles.doodle1} width={60} height={38} alt="" />
+            </AnimateIn>
+            <AnimateIn direction="left">
             <Image src="/images/doodle3.svg" className={styles.doodle2} width={120} height={81} alt="" />
+            </AnimateIn>
         </div>
+        </AnimateIn>
       </div>
     </section>
   );

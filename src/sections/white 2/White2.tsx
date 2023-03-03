@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.scss";
 
 export default function White2() {
   return (
     <section className={styles.white2}>
       <div className={styles.container}>
+        <AnimateIn>
         <div className={styles.funky}>
           <Image src="/images/doodle8.svg" className={styles.funkyImage} width={128} height={108} alt="" />
           <div className={styles.splash}>
@@ -24,6 +26,7 @@ export default function White2() {
             <Image src="/images/freelancer.svg" width={107} height={26} alt="" />
           </div>
         </div>
+        </AnimateIn>
       </div>
     </section>
   );

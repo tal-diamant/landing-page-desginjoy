@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn"
 import styles from "./styles.module.scss";
 
 export default function Sow() {
   return (
-    <section className={styles.sow}>
+    <section className={styles.sow} id="sow">
       <div className={styles.container}>
+        <AnimateIn>
         <h2>Apps, websites, logos & more.</h2>
+        </AnimateIn>
         <div className={styles.scope}>
+          <AnimateIn>
           <div className={styles.grid}>
             <div className={styles.col}>
                 <span>Websites</span>
@@ -40,7 +44,11 @@ export default function Sow() {
                 <span>Icons</span>
             </div>
           </div>
+          </AnimateIn>
+
+          <AnimateIn direction="right">
           <Image src="/images/doodle9.svg" width={100} height={131} alt="" />
+          </AnimateIn>
         </div>
       </div>
     </section>
