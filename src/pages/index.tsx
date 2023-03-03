@@ -21,6 +21,7 @@ import Pricing from "@/sections/pricing/Pricing";
 import Divider6 from "@/components/dividers/Divider6/Divider6";
 import FAQ from "@/sections/faq/FAQ";
 import Footer from "@/sections/footer/Footer";
+import Navbar from "@/components/Floating nav/Navbar";
 
 import styles from "@/styles/Home.module.css";
 
@@ -56,7 +57,7 @@ export default function Home() {
         <FAQ />
         <Footer />
         {/* cookies */}
-        {/* floating nav */}
+        <Navbar />
       </main>
     </>
   );
