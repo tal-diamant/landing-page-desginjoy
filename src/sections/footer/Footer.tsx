@@ -22,7 +22,7 @@ export default function Footer() {
         <div className={styles.bottom}>
             <div className={styles.leftCol}>
                 <Link href="">
-                    <Image src="/images/logo-white.svg" width={150} height={31} alt="" />
+                    <Image src="/images/logo-white.svg" className={styles.logo} width={150} height={31} alt="" />
                 </Link>
                 <div className={styles.hq}>
                     <Image src="/images/arizona.svg" width={40} height={38} alt="" />
