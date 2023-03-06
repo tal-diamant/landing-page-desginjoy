@@ -123,7 +123,7 @@
     .doodleLeft {
         width: 25vw;
         max-width: 25vw;
-        height: 383px;
+        height: auto;
         top: 15%;
         left : 0;
         right: auto;
@@ -137,7 +137,7 @@
         bottom: 37%;
         width: 30vw;
         max-width: 24vw;
-        height: 343px;
+        height: auto;
     }
     
 }
@@ -151,16 +151,16 @@
     }
 
     .doodleLeft {
-        height: 317px;
         width: 16vw;
+        height: auto;
         max-width: 200px;
     }
 
     .doodleRight {
-        height: 295px;
         top: 13%;
         bottom: 0;
         width: 16vw;
+        height: auto;
         max-width: 250px;
     }
 }
