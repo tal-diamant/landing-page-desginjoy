@@ -31,14 +31,6 @@
     line-height: 20px;
     font-weight: bold;
     text-align: left;
-
-    img {
-        position: absolute;
-        top: -4%;
-        right: -5%;
-        left: auto;
-        bottom: auto;
-    }
 }
 
 .grid {
@@ -54,6 +46,14 @@
     border-bottom: 6px solid #fbe8de;
 }
 
+.doodle {
+    position: absolute;
+    top: -4%;
+    right: -5%;
+    left: auto;
+    bottom: auto;
+}
+
 @media only screen and (min-width: 479px) {
     /* For big mobile: */
     .container h2 {
@@ -64,17 +64,24 @@
     .scope {
         padding: 50px;
 
-        img {
-            left: -5%;
-            right: auto;
-        }
-    } 
+        
+    }
+
+    .doodle {
+        left: -5%;
+        right: auto;
+    }
 }
 
 @media only screen and (min-width: 767px) {
     /* For tablet: */
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .doodle {
+        top: -7%;
+        left: -5%;
     }
 }
 

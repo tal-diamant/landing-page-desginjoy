@@ -4,9 +4,11 @@ import { useElementOnScreen } from "@/hooks/useElementOnScreen/useElementOnScree
 interface Props {
   children: React.ReactNode;
   direction?: string;
+  delay?: number;
+  positionOffset?: number;
 }
 
-export default function AnimateIn({ direction = "up", children }: Props) {
+export default function AnimateIn({ direction = "up", delay = 0, positionOffset = 4.9, children }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const onScreen = useElementOnScreen(ref, "-20px");
   const [seen, setSeen] = useState(false);
@@ -25,7 +27,8 @@ export default function AnimateIn({ direction = "up", children }: Props) {
           style={{
             opacity: seen ? 1 : 0,
             translate: seen ? "none" : "0 2rem",
-            transition: "250ms ease-in-out",
+            transition: "750ms cubic-bezier(.38,.7,.3,1)",
+            transitionDelay: `${delay}ms`
           }}
         >
           {children}
@@ -37,8 +40,8 @@ export default function AnimateIn({ direction = "up", children }: Props) {
           ref={ref}
           style={{
             opacity: seen ? 1 : 0,
-            // translate: seen ? "none" : "0 -2rem",
-            transition: "250ms ease-in-out",
+            translate: seen ? "none" : "0 -4rem",
+            transition: "750ms cubic-bezier(.38,.7,.3,1)",
           }}
         >
           {children}
@@ -50,8 +53,8 @@ export default function AnimateIn({ direction = "up", children }: Props) {
           ref={ref}
           style={{
             opacity: seen ? 1 : 0,
-            // translate: seen ? "none" : "2rem 0",
-            transition: "250ms ease-in-out",
+            translate: seen ? "none" : "4.7vw 0",
+            transition: "750ms cubic-bezier(.38,.7,.3,1)",
           }}
         >
           {children}
@@ -63,8 +66,8 @@ export default function AnimateIn({ direction = "up", children }: Props) {
           ref={ref}
           style={{
             opacity: seen ? 1 : 0,
-            // translate: seen ? "none" : "-2rem 0",
-            transition: "250ms ease-in-out",
+            translate: seen ? "none" : `-${positionOffset}vw 0`,
+            transition: ".75s cubic-bezier(.38,.7,.3,1)",
           }}
         >
           {children}
@@ -77,7 +80,7 @@ export default function AnimateIn({ direction = "up", children }: Props) {
           style={{
             opacity: seen ? 1 : 0,
             translate: seen ? "none" : "0 2rem",
-            transition: "250ms ease-in-out",
+            transition: "750ms cubic-bezier(.38,.7,.3,1)",
           }}
         >
           {children}

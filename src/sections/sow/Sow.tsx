@@ -46,9 +46,11 @@ export default function Sow() {
           </div>
           </AnimateIn>
 
-          <AnimateIn direction="right">
-          <Image src="/images/doodle9.svg" width={100} height={131} alt="" />
-          </AnimateIn>
+          <div className={styles.doodle}>
+            <AnimateIn direction="right">
+              <Image src="/images/doodle9.svg" width={100} height={131} alt="" />
+            </AnimateIn>
+          </div>
         </div>
       </div>
     </section>

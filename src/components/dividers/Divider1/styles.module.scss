@@ -34,6 +34,7 @@
         top: -50%;
         right: 0;
         bottom: auto;
+        text-align: right;
         z-index: 2;
     }
 }
@@ -59,11 +60,14 @@
 
     .top .imageLeft {
         top: -29%;
-        width: 100px;
-        height: 168px;
+
+        img {
+            width: 100px;
+            height: 168px;
+        }
     }
 
-    .top .imageRight {
+    .top .imageRight img {
         width: 140px;
         height: 212px;
     }
@@ -73,14 +77,20 @@
     /* For tablet: */
     .top .imageLeft {
         top: -52%;
-        width: 130px;
-        height: 218px;
+
+        img {
+            width: 130px;
+            height: 218px;
+        }
     }
 
     .top .imageRight {
         top: -50%;
-        width: 170px;
-        height: 258px;
+
+        img {
+            width: 170px;
+            height: 258px;
+        }
     }
 }
 
@@ -88,13 +98,19 @@
     /* For desktop: */
     .top .imageLeft {
         top: -68%;
-        width: 180px;
-        height: 302px;
+
+        img {
+            width: 180px;
+            height: 302px;
+        }
     }
 
     .top .imageRight {
         top: -110%;
-        width: 230px;
-        height: 349px;
+
+        img {
+            width: 230px;
+            height: 349px;
+        }
     }
 }

@@ -9,7 +9,11 @@ export default function White2() {
       <div className={styles.container}>
         <AnimateIn>
         <div className={styles.funky}>
-          <Image src="/images/doodle8.svg" className={styles.funkyImage} width={128} height={108} alt="" />
+          <div className={styles.funkyImage}>
+            <AnimateIn direction="left">
+              <Image src="/images/doodle8.svg" width={128} height={108} alt="" />
+            </AnimateIn>
+          </div>
           <div className={styles.splash}>
             <h3>Funky Scribbbles</h3>
             <p>A collection of funky vectorized scribbbles to spice up your design projects.</p>

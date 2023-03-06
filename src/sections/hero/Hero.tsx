@@ -22,12 +22,16 @@ export default function Hero() {
                 </div>
                 </AnimateIn>
             </div>
-            <AnimateIn direction="right">
-            <Image src="/images/hero-left.svg" className={`${styles.doodle} ${styles.doodleLeft}`} width={64} height={128} alt="" />
-            </AnimateIn>
+            <div className={`${styles.doodle} ${styles.doodleLeft}`}>
+              <AnimateIn direction="right">
+              <Image src="/images/hero-left.svg" width={64} height={128} alt="" />
+              </AnimateIn>
+            </div>
+            <div className={`${styles.doodle} ${styles.doodleRight}`}>
             <AnimateIn direction="left">
-            <Image src="/images/hero-right.svg" className={`${styles.doodle} ${styles.doodleRight}`} width={115} height={214} alt="" />
+            <Image src="/images/hero-right.svg" width={115} height={214} alt="" />
             </AnimateIn>
+            </div>
         </section>
     )
 }

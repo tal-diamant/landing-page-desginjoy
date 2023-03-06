@@ -77,12 +77,16 @@ export default function White1() {
               <p>Designjoy shows that they know the art of subtlety.</p>    
               <Image src="/images/webflow.svg" className={styles.webflow} width={110} height={28} alt="" />    
             </div>
+            <div className={styles.doodle1}>
             <AnimateIn direction="right">
-            <Image src="/images/6-lines.svg" className={styles.doodle1} width={60} height={38} alt="" />
+            <Image src="/images/6-lines.svg" width={60} height={38} alt="" />
             </AnimateIn>
+            </div>
+            <div className={styles.doodle2}>
             <AnimateIn direction="left">
-            <Image src="/images/doodle3.svg" className={styles.doodle2} width={120} height={81} alt="" />
+            <Image src="/images/doodle3.svg" width={120} height={81} alt="" />
             </AnimateIn>
+            </div>
         </div>
         </AnimateIn>
       </div>

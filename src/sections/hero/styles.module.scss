@@ -62,8 +62,13 @@
     position: absolute;
     top: 15%;
     bottom: auto;
-    width: 20vw;
-    max-width: 20vw;
+
+    img {
+        width: 20vw;
+        max-width: 20vw;
+        height: auto;
+        display: inline-block;
+    }
 }
 
 .doodleLeft {
@@ -73,6 +78,7 @@
 }
 
 .doodleRight {
+    text-align: right;
     display: none;
     right: 0;
     left: auto;
@@ -96,18 +102,16 @@
         margin-top: 40px;
     }
 
-    .doodleLeft {
-        width: 96px;
-        height: 192px;
-    }
-
     .doodleRight {
         display: inline-block;
         top: initial;
         right: -6%;
         bottom: 28%;
-        width: 115px;
-        max-width: 115px;
+
+        img {
+            width: 30vw;
+            max-width: 24vw;
+        }
     }
 
 }
@@ -121,13 +125,15 @@
     }
 
     .doodleLeft {
-        width: 25vw;
-        max-width: 25vw;
-        height: auto;
         top: 15%;
         left : 0;
         right: auto;
         bottom: auto;
+
+        img {
+            width: 25vw;
+            max-width: 25vw;
+        }
     }
 
     .doodleRight {
@@ -135,9 +141,6 @@
         left: auto;
         right: 0;
         bottom: 37%;
-        width: 30vw;
-        max-width: 24vw;
-        height: auto;
     }
     
 }
@@ -150,17 +153,13 @@
         max-width: 640px;
     }
 
-    .doodleLeft {
+    .doodleLeft img {
         width: 16vw;
-        height: auto;
         max-width: 200px;
     }
 
-    .doodleRight {
-        top: 13%;
-        bottom: 0;
+    .doodleRight img {
         width: 16vw;
-        height: auto;
         max-width: 250px;
     }
 }

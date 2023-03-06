@@ -30,9 +30,12 @@
     right: 0;
     left: auto;
     bottom: auto;
-    max-width: 40vw;
-    width: 100%;
-    height: auto;
+
+    img {
+        max-width: 40vw;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .splash {
@@ -132,7 +135,7 @@
 
 @media only screen and (min-width: 991px) {
     /* For desktop: */
-    .funkyImage {
+    .funkyImage img {
         max-width: 24vw;
     }
 

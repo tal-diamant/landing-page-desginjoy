@@ -10,9 +10,11 @@ export default function Divider4() {
       {/* <Image src={"/images/doodle5.svg"} className={styles.imageRight} width={100} height={152} alt="" /> */}
       </div>
       <div className={styles.bottom}></div>
-      {/* <AnimateIn direction="down"> */}
-      <Image src={"/images/short-stroke.svg"} className={styles.stroke} width={102} height={106} alt="" />
-      {/* </AnimateIn> */}
+      <div className={styles.stroke}>
+        <AnimateIn direction="down">
+          <Image src={"/images/short-stroke.svg"} width={102} height={106} alt="" />
+        </AnimateIn>
+      </div>
     </section>
   );
 }

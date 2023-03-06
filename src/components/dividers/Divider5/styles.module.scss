@@ -25,6 +25,7 @@
         top: 0;
         right: 0;
         bottom: auto;
+        text-align: right;
     }
 }
 
@@ -55,7 +56,7 @@
             top: 5%;
         }
 
-        .imageRight {
+        .imageRight img {
             width: 120px;
             height: 96px
         }
@@ -67,12 +68,15 @@
     .divider5 {
 
         .imageLeft {
-            width: 110px;
-            height: 160px;
             bottom: -70%;
+            
+            img {
+                width: 110px;
+                height: 160px;
+            }
         }
 
-        .imageRight {
+        .imageRight img {
             width: 178px;
             height: 143px
         }
@@ -84,12 +88,15 @@
     .divider5 {
 
         .imageLeft {
-            width: 144px;
-            height: 210px;
             bottom: -84%;
+
+            img {
+                width: 144px;
+                height: 210px;
+            }
         }
 
-        .imageRight {
+        .imageRight img {
             width: 178px;
             height: 143px
         }

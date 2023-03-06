@@ -28,6 +28,7 @@
         right: 0;
         bottom: auto;
         z-index: 2;
+        text-align: right;
     }
 }
 
@@ -57,7 +58,7 @@
 
 @media only screen and (min-width: 767px) {
     /* For tablet: */
-    .top .imageRight {
+    .top .imageRight img {
         width: 150px;
         height: 218px;
     }
