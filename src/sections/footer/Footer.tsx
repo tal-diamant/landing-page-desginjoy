@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
+import { scrollTo } from "@/utils/scrollTo";
 import styles from "./styles.module.scss";
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
         <div className={styles.splash}>
             <h2>See if Designjoy is right for you. (It totally is.)</h2>
             <p>Get a guided tour through Designjoy, and find out how you and your team can change the way you source design, forever.</p>
-            <Link href="#pricing-grid" scroll={false}>Get started</Link>
+            <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>Get started</Link>
         </div>
         </AnimateIn>
 
@@ -29,7 +30,7 @@ export default function Footer() {
         <AnimateIn>
         <div className={styles.bottom}>
             <div className={styles.leftCol}>
-                <Link href="#hero" scroll={false}>
+                <Link href="#-hero" onClick={() => scrollTo({id: 'hero'})}>
                     <Image src="/images/logo-white.svg" className={styles.logo} width={150} height={31} alt="" />
                 </Link>
                 <div className={styles.hq}>
@@ -39,14 +40,14 @@ export default function Footer() {
             </div>
             <div className={styles.rightCol}>
                 <div className={styles.left}>
-                    <Link href="#latest" scroll={false}>Latest projects</Link>
-                    <Link href="#pricing-grid" scroll={false}>Pricing</Link>
+                    <Link href="#-latest" onClick={() => scrollTo({id: 'latest'})}>Latest projects</Link>
+                    <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>Pricing</Link>
                     <Link href="" scroll={false}>FAQs</Link>
                     <Link href="" scroll={false}>Contact</Link>
                 </div>
                 <div className={styles.right}>
                     <Link href="" scroll={false}>Client login</Link>
-                    <Link href="#pricing-grid" scroll={false}>Get started</Link>
+                    <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>Get started</Link>
                     <Link href="" scroll={false}>Terms & conditions</Link>
                     <Link href="" scroll={false}>Privacy policy</Link>
                 </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { scrollTo } from "@/utils/scrollTo";
 import styles from "./styles.module.scss";
 
 export default function LogoNav() {
@@ -22,9 +23,9 @@ export default function LogoNav() {
         </div>
         <div className={styles.menuWrapper}>
           <div className={`${styles.menu} ${isMenuOpen? styles.open: ''}`}>
-            <Link href="">Latest projects</Link>
-            <Link href="">Pricing</Link>
-            <Link href="">FAQs</Link>
+            <Link href="#-latest" onClick={() => scrollTo({id: 'latest'})}>Latest projects</Link>
+            <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>Pricing</Link>
+            <Link href="#-faq" onClick={() => scrollTo({id: 'faq'})}>FAQs</Link>
             <Link href="">Login</Link>
           </div>
         </div>

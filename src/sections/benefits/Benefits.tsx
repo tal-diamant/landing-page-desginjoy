@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
+import { scrollTo } from "@/utils/scrollTo";
 import styles from "./styles.module.scss";
 
 export default function Benefits() {
@@ -16,7 +17,7 @@ export default function Benefits() {
             Seriously.
           </p>
           <div>
-            <Link href="#pricing-grid" scroll={false}>See plans</Link>
+            <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>See plans</Link>
           </div>
         </div>
         </AnimateIn>

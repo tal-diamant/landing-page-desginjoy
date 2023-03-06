@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
+import { scrollTo } from "@/utils/scrollTo";
 import styles from "./styles.module.scss";
 
 export default function Hero() {
@@ -11,7 +12,7 @@ export default function Hero() {
                 <h1 className={styles.heading}>A design agency with a twist</h1>
                 <p className={styles.paragraph}>Design subscriptions to scale your business.</p>
                 <div className={styles.heroButton}>
-                    <Link href="#pricing-grid" scroll={false}>
+                    <Link href="#-pricing" onClick={() => scrollTo({id: 'pricing'})}>
                         See plans
                     </Link>
                 </div>
