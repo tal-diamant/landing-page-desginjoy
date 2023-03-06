@@ -9,7 +9,7 @@ export default function Navbar() {
     <section className={styles.navbar}>
       <AnimateIn direction="up" delay={750}>
       <div className={styles.nav}>
-        <Link href="#hero" scroll={false} className={`${styles.navEdge} ${styles.upArrow}`}>
+        <Link href="#-hero" onClick={() => scrollTo({id: 'hero'})} className={`${styles.navEdge} ${styles.upArrow}`}>
             <Image src="/images/navbar-arrow.svg" width={22} height={22} alt="" />
         </Link>
         <Link href="#-benefits" onClick={() => scrollTo({id: 'benefits'})} className={styles.navItem}>Benefits</Link>
