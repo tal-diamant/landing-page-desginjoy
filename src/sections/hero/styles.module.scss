@@ -158,8 +158,13 @@
         max-width: 200px;
     }
 
-    .doodleRight img {
-        width: 16vw;
-        max-width: 250px;
+    .doodleRight {
+        top: 13%;
+        bottom: 0;
+
+        img {
+            width: 16vw;
+            max-width: 250px;
+        }
     }
 }

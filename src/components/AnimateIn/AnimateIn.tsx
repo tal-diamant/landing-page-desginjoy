@@ -10,7 +10,7 @@ interface Props {
 
 export default function AnimateIn({ direction = "up", delay = 0, positionOffset = 4.9, children }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const onScreen = useElementOnScreen(ref, "-20px");
+  const onScreen = useElementOnScreen(ref, "-36px");
   const [seen, setSeen] = useState(false);
 
   useEffect(() => {
