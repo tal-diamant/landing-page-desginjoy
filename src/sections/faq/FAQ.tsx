@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import FAQItem from "@/components/FAQ item/FAQItem";

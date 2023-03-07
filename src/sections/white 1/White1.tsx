@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.scss";
 

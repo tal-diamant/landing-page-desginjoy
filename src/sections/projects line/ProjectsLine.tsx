@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useRef } from "react";
 import { Parallax } from 'react-scroll-parallax';
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.scss";
-import { Console } from "console";
 
 export default function ProjectsLine() {
     const cogWheelRef = useRef(null);

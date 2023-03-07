@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 
 import LogoNav from "@/sections/logo nav/LogoNav";
 import Hero from "@/sections/hero/Hero";
@@ -24,8 +22,6 @@ import Footer from "@/sections/footer/Footer";
 import Navbar from "@/components/Floating nav/Navbar";
 
 import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -56,7 +52,7 @@ export default function Home() {
         <Divider6 />
         <FAQ />
         <Footer />
-        {/* cookies */}
+        {/* cookies? */}
         <Navbar />
       </main>
     </>
