@@ -16,7 +16,7 @@ export const scrollTo = ({ id, duration = 2000 }: Inputs) => {
 
   // the position of the scroll bar before the user clicks the button
   const initialPosition = window.scrollY;
-  console.log("get element by id:",document.getElementById(id));
+  // console.log("get element by id:",document.getElementById(id));
 
   // decide what type of reference that is
   // if neither ref or id is provided  set element to null
